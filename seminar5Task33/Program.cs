@@ -63,6 +63,6 @@ int InputNumber(string message)
 {
     //Выводит предложение message и в ответе получает число. Проверку не производит
     Console.Write($"{message}: ");
-    int res = int.Parse(Console.ReadLine());
+    int res = int.Parse(Console.ReadLine()!);
     return res;
 }
