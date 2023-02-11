@@ -45,7 +45,7 @@ int[] GetArray(int length, int min = -1, int max = 1)
 {
     //Генерирует массив целых чисел заданной длинны length
     //По-умолчанию числа в массиве от -1 до +1, меняется аргументами min и max
-    int[] res = new int[length - 1];
+    int[] res = new int[length];
     for (int i = 0; i < length; i++) res[i] = new Random().Next(min, max + 1);
     return res;
 }
@@ -53,7 +53,7 @@ void PrintArray(int[] someArray)
 {
     //Выводит массив в консоль в виде [,,]
     Console.Write("[");
-    for (int i = 0; i <= someArray.Length - 1; i++)
+    for (int i = 0; i < someArray.Length - 1; i++)
     {
         Console.Write($"{someArray[i]}, ");
     }
