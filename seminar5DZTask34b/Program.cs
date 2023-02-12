@@ -2,6 +2,7 @@
 //Напишите программу, которая покажет количество чётных чисел в массиве.
 //[345, 897, 568, 234] -> 2
 
+
 int size = InputNumber("Введите размер массива");
 int min = InputNumber("Введите минимальное значение в массиве");
 int max = InputNumber("Введите максимальное значение в массиве");
@@ -19,6 +20,7 @@ int[] GetArray(int size, int min, int max)
 
 array = GetArray(size, min, max );
 // Console.WriteLine("сгенерированный массив из случайных ["+String.Join(", ",(array))+"]");
+
 
 int InputNumber(string message)
 {
