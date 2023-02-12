@@ -8,7 +8,6 @@ int InputNumber(string message)
     int res = int.Parse(Console.ReadLine()!);
     return res;
 }
-
 int size = InputNumber("Введите размер массива");
 
 int[] array = GetArray(size);
@@ -38,12 +37,15 @@ int[] ChangeSign(int[]someArray)
 {
     int count = 0;
     int numberOfEven = 0;
+    int numberOfOdd = 0;
     for(int i = 0; i<= someArray.Length-1; i++) 
     { 
-        if (someArray[i]%2==0) numberOfEven = numberOfEven +1 ;        
+        if (someArray[i]%2==0) numberOfEven = numberOfEven +1 ;   
+        if (someArray[i]%2!=0) numberOfOdd = numberOfOdd +1 ;     
     }
     count = count + 1;
-    Console.WriteLine($"из них количество четных {numberOfEven}");
+    Console.WriteLine($"из них количество четных чисел: {numberOfEven}");
+    Console.WriteLine($"из них количество не четных чисел: {numberOfOdd}");
     return someArray;          
 }
 
