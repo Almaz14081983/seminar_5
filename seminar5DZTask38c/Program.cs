@@ -27,3 +27,8 @@ double num2 = new Random().Next(0,2);
 Console.WriteLine(num2);
 double result = num1/num2;
 Console.WriteLine(result);
+
+Console.Clear();
+Console.WriteLine("Ввеите трехзначное число: ");
+double number = double.Parse(Console.ReadLine());
+Console.Write(number % 10);
