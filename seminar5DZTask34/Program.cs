@@ -2,6 +2,8 @@
 //Напишите программу, которая покажет количество чётных чисел в массиве.
 //[345, 897, 568, 234] -> 2
 
+Console.Clear();
+
 int InputNumber(string message)
 {
     Console.Write($"{message}: ");
@@ -30,10 +32,10 @@ void PrintArray(int[] someArray)
     {
         Console.Write($"{someArray[i]}, ");
     }
-    Console.WriteLine($"{someArray[someArray.Length - 1]}]"); 
+    Console.WriteLine($"{someArray[someArray.Length - 1]}],"); 
 }
 
-int[] ChangeSign(int[]someArray)
+int[] NumberEven(int[]someArray)
 {
     int count = 0;
     int numberOfEven = 0;
@@ -44,11 +46,11 @@ int[] ChangeSign(int[]someArray)
         if (someArray[i]%2!=0) numberOfOdd = numberOfOdd +1 ;     
     }
     count = count + 1;
-    Console.WriteLine($"из них количество четных чисел: {numberOfEven}");
-    Console.WriteLine($"из них количество не четных чисел: {numberOfOdd}");
+    Console.WriteLine($"из них количество четных чисел: {numberOfEven},");
+    Console.WriteLine($"а количество нечетных чисел: {numberOfOdd}.");
     return someArray;          
 }
 
 PrintArray(array);
-array = ChangeSign(array);
+array = NumberEven(array);
 
